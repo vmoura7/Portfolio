@@ -1,0 +1,103 @@
+:root {
+  --primaryColor: #00eaff;
+  --primaryHover: hsl(185, 92%, 41%);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BbColor: #031a30;
+  --formColor: rgb(2, 15, 29);
+  --projectCardColor: #072340;
+  --textColor: #dae4fb;
+  --headerHeight: 3rem;
+}
+
+.projects .projectsContainer {
+  margin-top: 1rem;
+  justify-content: space-between;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.projects .projectsContainer .singleProjects {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  height: 100%;
+  background: var(--projectCardColor);
+}
+.projects .projectsContainer .singleProjects .externalLinks {
+  width: 100%;
+  justify-content: flex-end;
+}
+.projects .projectsContainer .singleProjects .externalLinks .githubIcon a {
+  color: var(--primaryColor);
+}
+.projects .projectsContainer .singleProjects .externalLinks .githubIcon a:hover {
+  color: var(--primaryHover);
+}
+.projects .projectsContainer .singleProjects:hover {
+  transform: translateY(-7px);
+  border-bottom: 2px solid var(--primaryColor);
+}
+.projects .projectsContainer .singleProjects .imgDiv {
+  height: 150px;
+  width: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects .projectsContainer .singleProjects .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.projects .projectsContainer .singleProjects .projectsTitle {
+  display: flex;
+  font-weight: 600;
+  color: var(--textColor);
+}
+.projects .projectsContainer .singleProjects .desc {
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+.projects .projectsContainer .singleProjects .technologies {
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+.projects .projectsContainer .singleProjects .technologies small {
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+  .projects .projectsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 769px) {
+  .projects {
+    width: 70%;
+    margin: auto;
+  }
+  .projects .projectsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1150px) {
+  .projects .projectsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects .projectsContainer .singleProjects .desc {
+    font-size: 17px;
+  }
+  .projects .projectsContainer .singleProjects .desc .technologies small {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .projects {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}/*# sourceMappingURL=projects.css.map */
