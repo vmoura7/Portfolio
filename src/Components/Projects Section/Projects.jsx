@@ -9,6 +9,8 @@ import img4 from '../../Assets/img4.jpg'
 import img5 from '../../Assets/img5.jpg'
 import img6 from '../../Assets/img6.jpg'
 import img7 from '../../Assets/img7.jpg'
+import img8 from '../../Assets/img8.jpg'
+import img9 from '../../Assets/img9.jpg'
 
 
 
@@ -55,7 +57,7 @@ const data = [
      liveLink: 'https://vmoura7.github.io/jogo-da-velha/',
      github: 'https://github.com/vmoura7/jogo-da-velha',
      title: 'Jogo da Velha',
-     desc: 'Projeto de jogo',
+     desc: 'Aplicação idealizada com conhecimentos adquiridos em JavaScript',
      tech1: 'Html',
      tech2: 'CSS',
      tech3: 'JavaScript',
@@ -96,6 +98,29 @@ const data = [
      tech2: 'CSS',
      tech3: 'JavaScript',
  },
+
+ {
+    id: 8,
+    image: img8,
+    liveLink: 'https://challenge-ecommerce-one.vercel.app',
+    github: 'https://github.com/vmoura7/Challenge-Ecommerce',
+    title: 'Projeto E-commerce.',
+    desc: 'Projeto de uma loja virtual, com páginas responsivas utilizando HTML, CSS e Javascript.',
+    tech1: 'Html',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
+},
+
+{
+    id: 9,
+    image: img9,
+    liveLink: 'https://portfolio-vmoura7.vercel.app',
+    github: 'https://github.com/vmoura7/portfolio',
+    title: 'Meu Portfolio.',
+    desc: 'Meu primeiro projeto utilizando os conhecimentos adquiridos em React',
+    tech1: 'React',
+    tech2: 'Sass',
+},
 ]
 
 
